@@ -1,0 +1,21 @@
+// Verify the problem + the problem inputs
+// Think about the problem + derieve a verbal solution (=think loudly) ( Experience + Practice )
+// Write down a first verison 
+// Derieve the time complexity and see if you can improve your soluton to do better /
+// Write down a first verison 
+
+
+//Ways of simplifying a problem
+
+Split into smaller sub-problems ==> Splits array into chunks
+                                ==> Possibly combined with...
+                                ==> Recursion
+
+--> Console.log(),
+--> Breakpoint()
+
+// Helper variables (eg helper arrays to store intermidaite resullts )
+
+
+//Practice Makes Perfect//
+

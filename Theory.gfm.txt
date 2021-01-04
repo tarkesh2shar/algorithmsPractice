@@ -1,0 +1,93 @@
+Deriving the Time Complexity Function
+
+  --  Count the number of the expression executions.
+example -->
+        function sumUp(n){
+            let result=0;
+            for (let i = 0; i <=n; i++) {
+                result=result+i;
+            }
+        return result;
+        }
+
+
+    for n==1 
+
+        function sumUp(n){
+
+            let result=0;                   1 times 
+
+            for (let i = 0; i <=n; i++) {   1 times
+                result=result+i;            1 times 
+            }
+             return result;                 1 times
+        }
+
+
+    
+    for n==3
+
+        function sumUp(n){
+
+            let result=0;                   1 times 
+
+            for (let i = 0; i <=n; i++) {   1 times
+                result=result+i;            3 times 
+            }
+             return result;                 1 times
+        }
+
+    
+    for n==10
+
+        function sumUp(n){
+
+            let result=0;                   1 times 
+
+            for (let i = 0; i <=n; i++) {   1 times
+                result=result+i;            10 times 
+            }
+             return result;                 1 times
+        }
+
+    for n==n
+
+        function sumUp(n){
+
+            let result=0;                   1 times 
+
+            for (let i = 0; i <=n; i++) {   1 times
+                result=result+i;            n times 
+            }
+             return result;                 1 times
+        }
+
+
+        Final equation -->     3+1*n        Linear (O(n))
+
+
+
+example -->
+        function sumUpContastTime(n){
+           return (n/2)*(1+n);
+        }
+
+    for n=1;
+        function sumUpContastTime(n){
+           return (n/2)*(1+n);     1
+        }
+    
+    for n=3;
+        function sumUpContastTime(n){
+           return (n/2)*(1+n);     1
+        }
+
+    for n=10;
+        function sumUpContastTime(n){
+           return (n/2)*(1+n);     1
+        }
+
+    Final equation == 1  O(1)
+
+
+
