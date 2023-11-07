@@ -16,3 +16,9 @@ function fib(n,memo){
 fib(5,{})
 fib(5,{})
 console.log(fib(1000,{}));
+
+
+// {
+//     fibbonaciRecursive(4) : 43,
+//     fibbonaciRecursive(2): 34
+// }
