@@ -15,6 +15,6 @@ function findElement(sortedArr,element,offset){
 }
 
 
-const arr=[1,5,9,13,99,100];
+const arr=[1,2,3,4,5,6,7,8,9,10,15,20,25,43,54,65,99]
 
-console.log(findElement(arr,13,0));
+console.log(findElement(arr,20,0));
