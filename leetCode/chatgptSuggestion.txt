@@ -1,0 +1,67 @@
+
+ChatGPT
+Certainly! Here's a list of algorithm and data structure questions that cover various types. Practice these to strengthen your problem-solving skills:
+
+Arrays and Strings:
+Implement an algorithm to reverse a string.
+Find the first non-repeated character in a string.
+Determine if two strings are anagrams.
+Implement an algorithm to rotate an array.
+Find the intersection of two arrays.
+
+Linked Lists:
+Implement a function to detect a cycle in a linked list.
+Reverse a linked list.
+Merge two sorted linked lists.
+Find the k-th to last element of a singly linked list.
+Detect and remove the loop in a linked list.
+
+Stacks and Queues:
+Implement a stack using arrays/linked list.
+Implement a queue using stacks.
+Evaluate a postfix expression.
+Implement a min stack (supporting getMin operation).
+Design and implement a circular queue.
+
+Trees and Binary Search Trees:
+Check if a binary tree is a binary search tree.
+Find the lowest common ancestor in a binary tree.
+Serialize and deserialize a binary tree.
+Determine if a binary tree is balanced.
+Convert a binary search tree to a sorted doubly linked list.
+
+Graphs:
+Implement depth-first search (DFS) on a graph.
+Implement breadth-first search (BFS) on a graph.
+Check if a graph is cyclic.
+Find the shortest path in an unweighted graph (BFS).
+Implement Dijkstra's algorithm for finding the shortest path in a weighted graph.
+
+Sorting and Searching:
+Implement binary search.
+Implement quicksort.
+Implement mergesort.
+Find the missing number in an array of 1 to N.
+Search in a rotated sorted array.
+
+Dynamic Programming:
+Find the Fibonacci sequence using dynamic programming.
+Solve the 0/1 Knapsack problem.
+Longest increasing subsequence in an array.
+Edit distance between two strings.
+Maximum subarray sum.
+
+Greedy Algorithms:
+Activity selection problem.
+Huffman coding.
+Fractional knapsack problem.
+Minimum spanning tree using Kruskal's algorithm.
+Dijkstra's algorithm for the shortest path.
+
+Miscellaneous:
+Implement a LRU (Least Recently Used) cache.
+Implement a trie (prefix tree).
+Implement a hash table with basic operations (insert, delete, search).
+Find the longest common prefix in an array of strings.
+Implement an algorithm for topological sorting.
+Remember to analyze the time and space complexity of your solutions. As you practice these problems, you'll become more comfortable with a variety of algorithms and data structures, enhancing your problem-solving abilities.

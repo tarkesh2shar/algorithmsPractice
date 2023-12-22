@@ -15,7 +15,7 @@ function fib(n,memo){
 //tIME cOMPLEXITY -- O(n)
 fib(5,{})
 fib(5,{})
-console.log(fib(1000,{}));
+console.log(fib(0,{}));
 
 
 // {

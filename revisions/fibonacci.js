@@ -25,7 +25,7 @@ function fib(number) {
   return fibArray[number-1];
 }
 
-// 1,1,2,3,5,8,13
+// 1,1,2,3,5,8,13,
 
 function fibbonaciRecursive(number,array=[1,1]){
   if(array.length===number){

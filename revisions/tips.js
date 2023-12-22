@@ -15,3 +15,15 @@ Use helper variables.
 
 
 
+//Steps 
+// 1) Verify Inputs (important)
+// 2) Think about Problem + Verbal Solution
+// 3) Write down a First Version 
+// 4) Verfify Results 
+// 5) Derive Time Complexity
+// 6) Explore Alternative Approaches.
+
+
+
+
+
