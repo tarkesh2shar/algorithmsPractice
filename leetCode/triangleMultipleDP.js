@@ -34,44 +34,23 @@
 let triangle = [[2],[3,4],[6,5,7],[4,1,8,3]];
 
 var minimumTotal = function(triangle) {
+    if (!triangle || triangle.length === 0) {
+        return 0;
+    }
 
-    let minima=0;
+    // Create a 2D array to store the minimum path sums
+    let dp = [...triangle];
 
-    if(triangle){
-        if(triangle.length==1){
-            return triangle[0][0]
+    // Start from the second-to-last row and update the minimum path sums
+    for (let i = triangle.length - 2; i >= 0; i--) {
+        let arr=triangle[i];
+        for (let j = 0; j < triangle[i].length; j++) {
+            let number = triangle[i][j];
+            dp[i][j] += Math.min(dp[i + 1][j], dp[i + 1][j + 1]);
         }
-        // else{
-        //     let x=triangle[0][0];
-        //     //combine with previous minima and return the lowest 
-        //     for (let i = 1; i < triangle[0].length; i++) {
-        //         let number=triangle[0][i];
-        //         if(x+minima > number+minima){
-        //             x=number;
-        //         }
-        //         // let number=triangle[0][i];
-        //         // minimumSumMap[number] = minimumSum + triangle[0][i];
-
-        //     }
-        //     return x;
-        // }
-    }
-     
-    for (let i = triangle.length-1; i >0; i--) {
-        const element = triangle[i];
-        minima= minima+ minimumTotal([element]);
     }
 
-    // if(triangle.length===1 && triangle[0].length==1){
-    //     return triangle[0];
-    // }
-
-   
-
-    return minima
-
-        console.log("**minima",minima);
-
+    return dp[0][0];
 };
 
 
