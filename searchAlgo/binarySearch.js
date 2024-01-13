@@ -1,6 +1,6 @@
 //Only work for ordered List//
 
-function findElement(sortedArr,element){
+function findElement(sortedArr,element){ 
     let startIndex=0;
     let endIndex=sortedArr.length-1;
 
