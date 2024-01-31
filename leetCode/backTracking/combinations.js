@@ -54,28 +54,28 @@ const helper=(a,b)=>{
 //     // //  const removedOrderPair = 
 // };
 
+ 
+var combine = function(n, k) {
+    const result = []; 
 
-var combine=(n,k)=>{
-    const numberOfCombinationNeeded = k;
-    const output=[];
-    const rangeForN=[];  // [1,2,3,4]
+   // Helper function to generate combinations recursively
+   const generateCombinations = (currentCombo, start) => {
+       if (currentCombo.length === k) {
+           result.push([...currentCombo]);
+           return;
+       }
 
-        if (k==0) {
-            return output;
-        }
+       for (let i = start; i <= n; i++) {
+           currentCombo.push(i);
+           generateCombinations(currentCombo, i + 1);
+           currentCombo.pop();
+       }
+   };
 
-        // for (let i = 1; i <= n; i++) {
-        //     rangeForN.push(i);
-        // }
+   generateCombinations([], 1);
 
-        while(n<=0){
-            const currentNumber=n;
-            
-        }
-
-
-
-}
+   return result;
+};
 
 
 console.log("**combine",combine(4,2));
