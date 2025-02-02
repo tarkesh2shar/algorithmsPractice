@@ -81,7 +81,7 @@ var threeSum = function (nums) {
 var threeSumImproved = function (nums) {
 
     const sortedArr = nums.sort((a, b) => a - b);
-    console.log("**sortedArr",sortedArr);
+    console.log("**sortedArr", sortedArr);
     const tripletArr = []
     for (let leftLeftPointer = 0; leftLeftPointer < sortedArr.length - 2; leftLeftPointer++) {
         // if leftleftPointer is greator than 0;
@@ -120,7 +120,7 @@ var threeSumImproved = function (nums) {
 
         }
     }
-    
+
     console.log("**tripletArr", tripletArr);
 
 }
