@@ -43,6 +43,12 @@ var reverseBetween = function(head, left, right) {
     
     let start = pre.next; // first node to reverse
     let then = start.next;// 2nd node to start
+
+    /**
+     * pre   start   then
+        ↓      ↓       ↓
+        1 →    2 →     3 → 4 → 5
+     */
     
     for (let i = 0; i < right - left; i++) {
         start.next = then.next; 
@@ -55,46 +61,46 @@ var reverseBetween = function(head, left, right) {
 };
 
 // wrong understand reverse just the digits//
-var reverseBetween = function(head, left, right) {
-    let currentPostion=0;
-    let lastHead;
-    let leftNode;
-    let rightNode;
+// var reverseBetween = function(head, left, right) {
+//     let currentPostion=0;
+//     let lastHead;
+//     let leftNode;
+//     let rightNode;
 
-    while(head!==null){
-        //inserting dummy Node at those swap location
-        if(currentPostion===left){
-            const dummyNode= new Node(null)
-            lastHead.next= dummyNode;
-            dummyNode.next=head.next;
-            leftNode=head;
-        }
-        if(currentPostion===right){
-            const dummyNode= new Node(null)
-            lastHead.next= dummyNode;
-            dummyNode.next=head.next;
-            rightNode=head;
-        } 
-        lastHead=head;
-        head= head.next;
-        currentPostion+=1;
-    }
+//     while(head!==null){
+//         //inserting dummy Node at those swap location
+//         if(currentPostion===left){
+//             const dummyNode= new Node(null)
+//             lastHead.next= dummyNode;
+//             dummyNode.next=head.next;
+//             leftNode=head;
+//         }
+//         if(currentPostion===right){
+//             const dummyNode= new Node(null)
+//             lastHead.next= dummyNode;
+//             dummyNode.next=head.next;
+//             rightNode=head;
+//         } 
+//         lastHead=head;
+//         head= head.next;
+//         currentPostion+=1;
+//     }
 
-    currentPostion=0;
+//     currentPostion=0;
 
-    //finally replacing the dummy node with swapped value 
-    while(head!==null){
-        if(currentPostion===left){
-            head.val=rightNode.val
-        } 
-        if(currentPostion===right){
-            head.val=leftNode.val
-        }
-        head= head.next;
-        currentPostion+=1;
-    }
-    return head;
-};
+//     //finally replacing the dummy node with swapped value 
+//     while(head!==null){
+//         if(currentPostion===left){
+//             head.val=rightNode.val
+//         } 
+//         if(currentPostion===right){
+//             head.val=leftNode.val
+//         }
+//         head= head.next;
+//         currentPostion+=1;
+//     }
+//     return head;
+// };
 
 
 
