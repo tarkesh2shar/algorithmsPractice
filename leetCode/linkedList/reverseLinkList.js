@@ -23,12 +23,43 @@
 
 // Follow up: Could you do it in one pass?
 
+
+
 class Node {
     constructor(val) {
         this.val = val;
         this.next = null;
     }
 }
+
+
+
+
+function buildList(arr) {
+  const dummy = new Node(0);
+  let cur = dummy;
+  for (const x of arr) {
+    cur.next = new Node(x);
+    cur = cur.next;
+  }
+  return dummy.next;
+}
+
+function toArray(head) {
+  const out = [];
+  let cur = head;
+  while (cur) {
+    out.push(cur.val);
+    cur = cur.next;
+  }
+  return out;
+}
+
+// TEST
+const head = buildList([1,2,3,4,5]);
+
+
+
 
 var reverseBetween = function(head, left, right) {
     if (head === null || left === right) return head;
@@ -51,8 +82,9 @@ var reverseBetween = function(head, left, right) {
      */
     
     for (let i = 0; i < right - left; i++) {
-        start.next = then.next; 
-        then.next = pre.next;
+        // pull then forward to the left //
+        start.next = then.next; // 2 --> 4
+        then.next = pre.next;   // 3 -->2
         pre.next = then;
         then = start.next;
     }
@@ -106,5 +138,5 @@ var reverseBetween = function(head, left, right) {
 
 
 
-console.log("**reverseBetween",reverseBetween([1,2,3,4,5],2,4));
-console.log("**reverseBetween",reverseBetween([5],1,1));
+console.log("**reverseBetween",reverseBetween(head,2,4));
+// console.log("**reverseBetween",reverseBetween([5],1,1));
