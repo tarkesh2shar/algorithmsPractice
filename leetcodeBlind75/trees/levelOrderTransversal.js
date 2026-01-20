@@ -109,9 +109,11 @@ var levelOrder = function(root) {
     const queue = [root];
 
     while (queue.length > 0) {
-        const levelSize = queue.length;
+        const levelSize = queue.length; //freeze current level size
+        //we create a new array for each level
         const level = [];
-
+ 
+        //what we actually want to put in the above level array (all the children?
         for (let i = 0; i < levelSize; i++) {
             const node = queue.shift();
             level.push(node.val);
@@ -120,6 +122,7 @@ var levelOrder = function(root) {
             if (node.right) queue.push(node.right);
         }
 
+        //we push the level array to results
         results.push(level);
     }
 
