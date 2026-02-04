@@ -40,8 +40,22 @@
 
     console.log("**after base case rows",dp);
 
+    //How many operation to convert alphabets combination to ""  columns
+
   // "" -> word2 : insert j chars
   for (let j = 0; j <= n; j++) dp[0][j] = j;
+    //How many operation to convert alphabets combination to ""  columns
+
+  /**
+   * Base case dp table for word1 = "horse", word2 = "ros"
+   *              ""   r   o   s
+            ""     0   1   2   3
+            h      1
+            ho     2
+            hor    3
+            hors   4
+            horse  5
+   */
 
 
    console.log("**after base case column",dp);
